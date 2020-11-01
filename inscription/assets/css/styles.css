@@ -1,0 +1,16 @@
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color:#fff;
+  background-color:#00bf2f;
+  border-color:#00bf2f;
+}
+
+@media (min-width:992px) {
+  .col-lg-7 {
+    -ms-flex:0 0 58.333333%;
+    flex:0 0 100%;
+    max-width:100%;
+    margin-top:20px;
+    background-color:#fff;
+  }
+}
+
