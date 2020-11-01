@@ -1,0 +1,111 @@
+/*   BASE    */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+h1, h3, h4 {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/*    COLOR    */
+
+.blue {
+    color:#18284c;
+}
+
+.pink--text {
+    color: #ce9929;
+}
+
+.pink--btn-color {
+    background:#ce9929;
+    color: white;
+}
+
+.pink--btn-color:hover {
+    background:#836014;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.linear {
+    color: linear-gradient(145deg,#ce9929 5%,#18284c 100%) fixed;
+}
+
+.card--grey {
+    background: #ccc;
+}
+
+/*   SPEAKERS  */
+#speakers {
+    padding : 4% 5% 5% 5%;
+    background: linear-gradient(145deg,#ce9929 2%,#18284c 90%) fixed;
+}
+
+#speakers h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#speakers h6 {
+    margin-top: -2%;
+}
+
+
+#speakers .card {
+    height: 100%;
+    width: 100%;
+    border : none;
+    border-radius: 0px;
+}
+
+
+#blog {
+    padding : 3% 5%;
+    background: rgba(204, 204, 204, 0.753);
+}
+#blog .blog--a:hover {
+    text-decoration: none;
+    color: #ff00bfc0;
+}
+
+
+
+/* MEDIA SCREEN */
+@media screen and (max-width :991px) {
+
+    /* Programs */
+    #programs p, #programs h4, #programs h5 {
+        text-align: center;
+        padding: -15px;
+    }
+
+    #programs img {
+        justify-content: center;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
