@@ -1,0 +1,392 @@
+/*      BASE      */
+:root {
+    --c1:#18284c;
+    --c2:#ce9929;
+    --c3:#4b4d7b;
+    --c4:#eabf5a8e;
+    --C5:#fff;
+    --c6:#000;
+    --c7:#f7f7f7;
+    --c8:#18284c;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+.gold {
+    color:var(--c2);
+}
+
+.bleu {
+    color: var(--c1);
+}
+
+.white {
+    color:var(--C5);
+}
+
+.black {
+    color:var(--c6);
+}
+
+#mobile-nav-toggle {
+    color: white;
+}
+
+/*     BASE    */
+
+/*     ABOUT    */
+#about {
+    background: var(--c1);
+    box-shadow: inset 2100px 0 0 0 rgba(0, 0, 0, .7);
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color:white;
+}
+
+#about .card {
+    background: none;
+    border:none;
+    padding: 0 auto;
+}
+
+#about h3 {
+    color:var(--c2);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--c4);
+    display: inline-block;
+}
+
+#about h5 {
+    color : var(--c2)
+}
+
+/*   compte à rebours   */
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 45px;
+    margin-left: 25%;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    border : 1px solid var(--c2);
+    margin-right: 2px;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: var(--c2);
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+/*   speakers   */
+.speaker-bg{
+    min-height: 60vh;
+}
+.card-speaker{
+    border:10px solid #fff;
+    position:relative;
+    overflow:hidden
+}
+.card-speaker .speaker-footer{
+    position:absolute;
+    bottom:0;left:0;
+    width:100%;
+    text-align:center;
+    background:var(--c1);
+    padding:22px 5px;z-index:2;
+    transition:all .7s ease
+}
+.card-speaker .speaker-footer h4{
+    margin-bottom:0;
+    color:#fff;
+    font-size:20px;
+    margin-bottom:3px
+}
+
+.card-speaker .speaker-footer p{
+    margin-bottom:0;
+    color:#fff;
+    font-size:14px
+}
+
+    .card-speaker .speaker-overlay{
+    position:absolute;
+    top:0;left:0;width:100%;height:100%;
+    background:var(--c1);
+    z-index:1;
+    transform:translateY(-60px);
+    opacity:0;
+    z-index:-1;
+    transition:all .6s ease
+}
+
+    .card-speaker:hover .speaker-overlay{
+    opacity:1;z-index:1;
+    transform:translateY(0)
+}
+
+    .card-speaker:hover .speaker-footer{
+    background:var(--c2);
+}
+
+    .speaker-social{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
+
+    .speaker-social li{
+    display:inline-block
+}
+.speaker-social li i,.speaker-social li span{
+    font-size:14px;
+    color:#fff;
+    opacity:.7
+}
+
+.speaker-social li::after{
+    content:"|";
+    color:var(--c2);
+    margin-left:9px;
+    margin-right:7px
+}
+
+.speaker-social li:last-child::after{
+    display:none
+}
+
+.speaker-social li:hover i,.speaker-social li:hover span{
+    color:#fff;
+    opacity:1
+}
+
+/* Programs */
+#programs {
+    background: var(--c1);
+    box-shadow: inset 2100px 0 0 0 rgba(0, 0, 0, .4);
+}
+
+.schedule-content .schedule-title{
+    display:inline-block;
+    margin-bottom:8px
+}
+.schedule-content .schedule-date{
+    font-size:14px
+}
+.schedule-content{
+    padding:10px
+}
+
+.schedule-content .schedule-date{font-size:14px}
+
+.schedule-content .schedule-title{display:inline-block;margin-bottom:8px}
+
+.card-identity{background:#18284c;text-align:center;padding:35px 10px;-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s}
+
+.card-identity>*{color:#fff}
+
+.card-identity img{width:80px;height:80px;display:inline-block;border-radius:50%;margin-bottom:15px}
+
+.card-identity h3{margin-bottom:5px}
+
+.schedule-content{padding:10px}
+
+.schedule-content .schedule-date{font-size:14px}
+
+.schedule-content .schedule-title{display:inline-block;margin-bottom:8px}
+
+.schedule-card{background:#f7f7f7;margin-bottom:30px}
+
+.schedule-card p{margin-bottom:0}
+
+.schedule-card:hover .card-identity{background:#ce9929}
+
+.schedule-card{background:#f7f7f7;margin-bottom:30px}.schedule-card p{margin-bottom:0}
+
+.schedule-card:hover .card-identity{background:#ce9929}
+
+.schedule-card:last-child{margin-bottom:0}
+
+.tab-pane.active{animation:slide-down .5s ease-out}
+
+.scheduleTab .nav{border-bottom:0;justify-content:center;margin-bottom:40px}
+
+.scheduleTab .nav-item{margin-right:10px}
+
+.scheduleTab .nav-item:last-child{margin-right:0}
+
+.scheduleTab .nav-item a{display:block;padding:8px 16px;background:#f7f7f7;margin-bottom:10px;-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;transition:all 0.3s ease 0s}
+
+.scheduleTab .nav-item h4{
+    font-size:20px;
+    margin-bottom:5px
+}
+
+.scheduleTab .nav-item p{
+    font-size:15px;
+    color:#797979;
+    margin-bottom:0
+}
+
+.scheduleTab .nav-item a.active{
+    background:#18284c
+}
+
+.scheduleTab .nav-item a.active>*{
+    color:#fff
+}
+
+.primary-text{
+    color:#18284c
+}
+
+.primary-text2{
+    color:#ce9929
+}
+
+
+.section-margin--large{
+    margin:70px 0
+}
+
+.section-intro-two h2{
+    color: var(--c7);
+}
+
+.section-intro__title{
+    text-transform:uppercase;
+    margin-bottom:0
+}
+
+.section-intro  h2{
+    font-size:26px;
+    color: var(--c2);
+}
+
+.section-intro-white>*{
+    color:#fff
+}
+
+/* sponsors  */
+#sponsors {
+    background: rgba(204, 204, 204, 0.212);
+}
+
+#sponsors .card{
+    background: rgba(204, 204, 204, 0);
+    border: 7px solid white;
+    -webkit-transition:all 0.3s ease 0s;
+    -moz-transition:all 0.3s ease 0s;
+    -o-transition:all 0.3s ease 0s;
+    transition:all 0.3s ease 0s;
+}
+
+
+#sponsors .card:hover{
+    box-shadow:0px 5px 20px 0px rgba(10,9,13,0.15);
+    -webkit-transition:all 0.3s ease 0s;
+    -moz-transition:all 0.3s ease 0s;
+    -o-transition:all 0.3s ease 0s;
+    transition:all 0.3s ease 0s;
+}
+
+#sponsors .cadre2 .card{
+    width: 80%;
+}
+
+@media screen and (max-width:375px) {
+    #clockdiv {
+        margin-left: -6%;
+        margin-top: -2%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+/*   PRIX     */
+#prix {
+    background: url('../img/tech.png') center center no-repeat fixed;
+    background-size: cover;
+    height: 100%;    
+    box-shadow: inset 1500px 0 0 0 rgba(0, 0, 0, 0.466);
+}
+
+#prix .card {
+    border : none;
+    width: 85%;
+    margin: 0 10px;
+    height: 50vh;
+}
+
+#prix .card-over {
+    overflow: scroll;
+}
+
+#prix .card video {
+    height: 50vh;
+    width: 100%;
+}
+
+#prix .content-fluid {
+    padding: 5%;
+}
+
+#prix .suite {
+    font-size: 20px;
+    color: grey;
+}
+
+#prix .suitesec {
+    font-size: 20px;
+    color: white;
+}
+
+#prix h6 {
+    line-height: 30px;
+}
+
+#prix p, #prix h5 {
+    margin: 10px 30px;
+}
+
+#prix .btn {
+    background: rgba(0, 0, 0, 0.884);
+    width: 50%;
+}
+
+/* map */
+
+#map {
+    min-height: 30vh;
+    background: white;
+}
